@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gram_of_art_backgorund" >
+
+    <com.viewpagerindicator.TitlePageIndicator
+            android:id="@+id/main_tpi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            />
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/main_vp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" >
+    </android.support.v4.view.ViewPager>
+
+
+
+    <!--<fragment-->
+       <!--android:name="com.soldiersofmobile.fragments.ListOfArtFragment"-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="match_parent"/>-->
+</LinearLayout>

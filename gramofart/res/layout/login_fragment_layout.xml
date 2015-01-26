@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.soldiersofmobile"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gram_of_art_backgorund"
+    tools:ignore="ResAuto" >
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_sparkly" />
+
+    <LinearLayout
+        android:id="@+id/login_frame_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_iv"
+        android:layout_marginLeft="@dimen/login_container_margin"
+        android:layout_marginRight="@dimen/login_container_margin"
+        android:layout_marginTop="@dimen/login_container_margin_top"
+        android:background="@drawable/login_frame"
+        android:orientation="horizontal"
+        android:paddingBottom="1dp"
+        android:paddingRight="1dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/login_label_tv"
+                style="@style/LabelStyle"
+                android:background="@drawable/form_title_top"
+                android:text="@string/username_text" />
+
+            <TextView
+                android:id="@+id/password_label_tv"
+                style="@style/LabelStyle"
+                android:layout_below="@+id/separator_horizontal"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/form_title_bottom"
+                android:text="@string/password_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-1dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/login_et"
+                style="@style/GramOfArtEdittext"
+                android:layout_width="match_parent" >
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editext_separator_height"
+                android:background="@color/login_separator" />
+
+            <EditText
+                android:id="@+id/password_et"
+                style="@style/GramOfArtEdittext"
+                android:layout_width="match_parent"
+                android:inputType="textPassword" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_button_height"
+        android:layout_below="@id/login_frame_ll"
+        android:layout_marginLeft="@dimen/login_container_margin"
+        android:layout_marginRight="@dimen/login_container_margin"
+        android:layout_marginTop="@dimen/login_button_margin_top"
+        android:onClick="clickHandler"
+        android:text="@string/login_text" />
+
+    <Button
+        android:id="@+id/sign_up_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_button_height"
+        android:layout_alignLeft="@id/login_btn"
+        android:layout_alignRight="@id/login_btn"
+        android:layout_below="@id/login_btn"
+        android:layout_marginTop="@dimen/button_margin_top"
+        android:onClick="clickHandler"
+        android:text="@string/sign_up_text" />
+
+    <com.soldiersofmobile.views.CustomFontTextView
+        android:id="@+id/connect_fb_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_button_height"
+        android:layout_alignLeft="@id/login_btn"
+        android:layout_alignRight="@id/login_btn"
+        android:layout_below="@id/sign_up_btn"
+        android:layout_marginTop="@dimen/button_margin_top"
+        android:background="@drawable/fb_button_background_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="clickHandler"
+        android:text="@string/connect_fb_text"
+        android:textColor="@color/white"
+        app:customFont="tw_cen_mt.ttf" />
+
+</RelativeLayout>

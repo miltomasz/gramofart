@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.soldiersofmobile"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="ResAuto" >
+
+    <ImageView
+        android:id="@+id/art_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/art_item_desc_height"
+        android:background="@drawable/art_item_desc_background"
+        android:orientation="horizontal" >
+
+        <com.soldiersofmobile.components.RoundedImageView
+            android:id="@+id/author_avatar_iv"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/avatar"
+            android:visibility="visible"
+            app:corner_radius="50dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/author_avatar_iv"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/author_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="John Doe"
+                android:textColor="@color/light_blue" />
+
+            <TextView
+                android:id="@+id/published_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="3 days ago"
+                android:textColor="@color/light_grey" />
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/adore_counter_tglbtn"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/like_toggle_btn_selector"
+            android:paddingLeft="20dp"
+            android:text="Tekst"
+            android:textColor="@color/toggle_btn_text_selector"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

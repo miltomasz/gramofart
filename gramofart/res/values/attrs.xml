@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomFontTextView">
+        <attr name="customFont" format="string" />
+        <attr name="textAngle" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CustomFontEditTextView">
+        <attr name="custom_font" format="string" />
+    </declare-styleable>
+
+    <!-- Attributes for RoundedImageView -->
+    <declare-styleable name="RoundedImageView">
+        <!-- Size to round image corners by. Default is zero, unrounded.
+		<b>NOTE:</b> This only works for bitmap image sources.-->
+        <attr name="corner_radius" format="dimension" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:layout_gravity="fill_horizontal"
+    android:background="@color/gram_of_art_backgorund" >
+
+    <TextView
+        android:id="@+id/actionbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/actionbar_background"
+        android:gravity="center"
+        android:textSize="@dimen/actionbar_text_size"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

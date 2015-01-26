@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/list_of_art"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/list_of_art_margin"
+        android:layout_marginRight="@dimen/list_of_art_margin"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15.0dp"        
+        android:paddingBottom="15dp"
+        android:paddingTop="20dp"
+        android:scrollbars="none"
+        android:visibility="visible" >
+    </ListView>
+
+</LinearLayout>

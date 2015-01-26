@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GramOfArt</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+
+    <!-- Login section -->
+    <string name="username_text">Username</string>
+    <string name="password_text">Password</string>
+    <string name="edittext_hint">Type here...</string>
+    <string name="login_text">Login</string>
+
+    <!-- Fragments title -->
+    <string name="login_fragment">LOGIN</string>
+    <string name="login_fragment">EMAIL</string>
+    <string name="photo_roll">PHOTO ROLL</string>
+    <string name="create_account_text">Create account</string>
+    <string name="sign_up_text">Sign up</string>
+    <string name="connect_fb_text">Connect with FB</string>
+    <string name="email_text">Email</string>
+
+    <!-- Add Photo -->
+    <string name="btnIntend">Take Picture</string>
+    <string name="cannot">Cannot</string>
+    <string name="album_name">GramOfArt</string>
+    <string name="enter_description">Enter description</string>
+    <string name="add_photo">Publish photo</string>
+    <string name="photo_save_error">Photo save error:</string>
+    <string name="image_not_fount_error">image not found</string>
+    <string name="location_dialog_title">Choose your location</string>
+    <string name="enter_location">Enter location</string>
+    
+    <string name="app_id">226035424245919</string>
+    <string name="fb_app_id">356703764460252</string>
+</resources>

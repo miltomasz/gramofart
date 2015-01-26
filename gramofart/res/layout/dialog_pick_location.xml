@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.soldiersofmobile"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="30dp"
+    android:layout_height="match_parent"
+    tools:ignore="ResAuto" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pickup_location_background"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/location_dialog_action_bar_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_default_height"
+            android:background="@color/gram_of_art_backgorund" >
+
+            <com.soldiersofmobile.views.CustomFontTextView
+                android:id="@+id/dialog_actionbar_screen_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/dialog_actionbar_back_ibtn"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="@string/location_dialog_title"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ProgressBar
+                android:id="@+id/dialog_progress_bar"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/progress_bar_animation"
+                android:padding="4dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.soldiersofmobile.views.CustomFontEditText
+            android:id="@+id/location_query_et"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="14dp"
+            android:gravity="left|top"
+            android:lines="2"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        <ListView
+            android:id="@+id/locations_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>
